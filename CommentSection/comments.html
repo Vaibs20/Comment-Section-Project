@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="comments.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/circle-user?f=classic&s=duotone">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">Welcome!</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button><i class="fa fa-search"></i></button>
+        </div>
+        <div class="icons">
+            <i class="fa fa-video"></i>
+            <i class="fa fa-th"></i>
+            <i class="fa fa-bell"></i>
+            <i class="fa fa-user-circle"></i>
+        </div>
+    </header>
+
+    <h3 style="font-weight: 400; margin-left: 13px;"></h3>
+    <!-- <i class="fa-solid fa-user"> </i>
+    <i class="fa-solid fa-circle-user" style="color: #74C0FC; font-size: 2em;"></i> -->
+    <form action="/add" id="commentSection">
+        <div>
+            <input type="text" name="username" placeholder="Insert your username..." id="user" required>
+            <input type="text" name="comment" placeholder="Add a comment..." id="comment" required>
+            <section>
+                <button id="cancel" type="reset">Cancel</button>
+                <button id="submit" value="comment" disabled="disabled">Comment</button>
+            </section>
+        </div>
+    </form>
+
+    <ul id="comments">
+
+
+    </ul>
+
+    <script src="comments.js"></script>
+    <script src="https://kit.fontawesome.com/57afeb1ce6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
